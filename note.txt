@@ -1,0 +1,105 @@
+Contact Managment System -CRUD Application
+
+1.create angular projuct
+2. install bootstrap and fontawesome
+3.paste cdn link of fontawesome in index.html
+4.configure bootstrap and fontawesome in angular.json
+5. configure google fonts 
+6.create components needed for the project
+    Contact manager,add Contact, update Contact/edit Contact,view Contact,page not found
+7. set up the path for each component that we need to display in webpage
+-inside app-routing.module.ts ,routes array
+-use router-outlet selecter inside appComponent.html page to view the requested component
+8. design each html pages as like yopu desire
+9.Set up the server api-
+   -Create server folder inside the project
+   -Create db.json file
+   -open cmd from server folder
+        - Create package.json  - command :- npm init 
+        - install json-server inside server folder
+        - update package.json file script as :-
+             - "start": "json-server  --watch db.json --port 3000"
+        -to run server use command :npm start
+10.Create Model for contact and group
+       -create model folder in src folder
+       -create myContact.ts  / myGroup.ts  file 
+11.Create aa angular service for api call  
+12. to get http methods
+      -Import HttpClientModule in app.module.ts  
+      -HttpClient
+
+
+
+
+
+
+
+
+                          Angular front End Development Framework
+
+              Basic commands
+
+    1.create a project 
+
+            installing cli   -  npm install -g @angular/cli
+            angular install - ng new my-app
+    2. run angular project
+                  cd my-app
+                  ng serve --open
+ 
+    3.component creation -ng s c command-name
+    4.Angular Services -ng g s service-folder/service-name
+
+
+
+
+
+
+
+                            Basic building blocks
+
+    1.module -used to add 3rd party libraries           
+                            
+
+bootstrap install - npm install bootstrap
+
+fontawesome - npm i @fortawesome/fontawesome-free
+
+cnd link on head html -  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+angular.json/styles -add the location of bootstrap and fontawesome from nodemodules -   "node_modules/bootstrap/dist/css/bootstrap.min.css"(bootstrap)  /   "node_modules/@fortawesome/fontawesome-free/css/all.css"    (  "node_modules/@fortawesome/fontawesome-free/css/all.css") 
+
+angular.json/script -  
+
+
+    2.component -to create html page -(html,css,ts)
+    3.selecter -used to replace it html correspondings to the component
+    4.Angular Services - Reusable code that can share between components  
+    5.Asynchronous function -RxJs
+    6.Observable -
+          subscribe(call back)      
+    7.to get http methods
+    8.dependecy injuction - perform constractor   (share data througth two classes)
+      syntaxt:acces specifier variable-name:class-name
+    9.Data binding -data sharing inside a component  
+               -one way binding
+                     -component(ts) to view(html)
+                         -string interpolation -{{variable-name}}
+                         -property binding
+                    view to component
+                         -event binding - (event-name)="function-name ()"
+                         -event binding using $event argumment -(event-name)="function-name ($event)"        
+
+            -two way binding
+                    -using ngModel:
+                       -Import formsModule in appModule
+                       -[(ngModel)]="property-name
+    10.Directives - DOM manipulation
+          -component Directives 
+          -structural Directives    -to add or remove html elements based on a condition or length of an array                   
+
+
+               - *ngIf="condition"
+               - *ngFor="let variable-name of array-name"
+
+    9. Pipe -tranform user input to another format           

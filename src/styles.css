@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Fasthand&family=Island+Moments&family=Kolker+Brush&family=Noto+Sans+Vai&family=Trispace:wght@300;400&display=swap');
+
+
+body{
+    font-family: 'Noto Sans Vai', sans-serif;
+}
+
