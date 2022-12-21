@@ -31,11 +31,17 @@ export class ApiService {
   //function for fetch all groups from http://localhost:3000/groups
 
   getAllGroups() {
-   return this.http.get("http://localhost:3000/groups")
+    return this.http.get("http://localhost:3000/groups")
   }
 
   //function for adding new contact to server
-  addContact(contactBody:any){
-    this.http.post(this.baseUrl,contactBody)
+  addContact(contactBody: any) {
+    return this.http.post(this.baseUrl, contactBody)
+  }
+
+  //function for deleting  contact 
+  deleteContact(contactId: any) {
+    return this.http.delete(`${this.baseUrl}/${contactId}`)
+
   }
 }

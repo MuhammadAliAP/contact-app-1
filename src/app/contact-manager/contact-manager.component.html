@@ -46,7 +46,7 @@
                                                 class="fa-solid fa-eye"></i></a>
                                         <a routerLink="/contact/edit/:contactId" class="btn btn-success mt-1"><i
                                                 class="fa-solid fa-pen"></i></a>
-                                        <button class="btn btn-danger mt-1"> <i class="fa-solid fa-trash"></i></button>
+                                        <button (click)="deleteContact(contact.id)" class="btn btn-danger mt-1"> <i class="fa-solid fa-trash"></i></button>
                                     </div>
                                 </div>
                             </div>
